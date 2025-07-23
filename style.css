@@ -473,15 +473,22 @@ section{
     color:  white;
 }
 .highlights{
-    padding:5rem 10% 0rem 10%;
-    
+    padding:5rem 5% 0rem 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlights-content{
+    display: flex;
+    justify-content: center;
 }
 .highlights-content ul{
     display: flex;
     justify-content: center;
     
     gap: 2rem;
-    flex-wrap: wrap;
+   
 }
 
 .highlights-content li{
@@ -545,7 +552,7 @@ section{
     text-align: center;
     padding: 0 2rem;
     font-size: 1rem;
-    color: white
+    color: white;
     
 }
 
