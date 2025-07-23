@@ -38,6 +38,10 @@ header{
     cursor: pointer;
 }
 
+.dropdown{
+    display: none;
+}
+
 .navbar{
     display: flex;
 }
@@ -346,8 +350,6 @@ section{
   scroll-behavior: smooth;
   font-family: 'Roboto';
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  
 }
 
 
@@ -360,12 +362,15 @@ header{
     backdrop-filter: blur(10px);
     border-color: white;
      z-index: 9999;
+     
+     overflow-x: visible;
 }
 .content{
     justify-content: space-between;
     display: flex;
-    padding:.5rem 10%;
+    padding: .5REM 7%;
     align-items: baseline;
+    
 }
 .logo{
     font-size: 1.3rem;
@@ -373,27 +378,31 @@ header{
     background: linear-gradient(240deg, rgb(138, 74, 10), rgb(182, 121, 6));
     background-clip: text;
     color: transparent;
-}
-
-.menu-toggle{
-    display: none;
-    cursor: pointer;
     
 }
-.navbar{
-    display: none;
+
+.dropdown{
+    display: block;
+    background-color: white;
 }
 
+.navbar{
+    display: none !important;
+    border: 1px solid red;
+}
 .navbar a{
-   
+    display: flex;
     padding: 0 .4rem;
     text-decoration: none;
     font-weight: 700;
     color: black;
     font-size: .6rem;
+    border: 1px solid red;
 }
 
-  
+.navbar.show{
+    display: block;
+}
 
 .home{
     padding: 7rem 10% 0 10%;
@@ -403,7 +412,6 @@ header{
     flex-direction: column-reverse;
     gap: 1.5rem; 
     align-items: center
-
 }
 .intro{
     text-align: center;
@@ -473,10 +481,11 @@ header{
     color:  white;
 }
 .highlights{
-    padding:5rem 5% 0rem 5%;
+    padding:5rem 5%;
     display: block;
     justify-content: center;
     align-items: center;
+    
 }
 
 .highlights-content{
@@ -488,8 +497,9 @@ header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
+    padding: .2rem;
     gap: 2rem;
+    
    
 }
 
@@ -520,7 +530,7 @@ header{
 }
 
 .projects{
-    padding: 0 10%;
+    padding: 5rem 10%;
 }
 
 .projects-content h1{
@@ -645,9 +655,11 @@ header{
     
 }
 
+
+
 .achievements{
     
-    padding: 0;
+    padding: 5rem 0;
 }
 
 .achievements h1{
