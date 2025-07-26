@@ -137,10 +137,11 @@ section{
     margin-top: 5rem;
     display: flex;
     justify-content: right;
+    gap: 1rem;
 }
 .buttons a{
     padding: .8rem 2.5rem;
-    margin-left: 1rem;
+    
     font-size: 1.2rem;
     border-radius: 50rem;
     font-weight: 700;
