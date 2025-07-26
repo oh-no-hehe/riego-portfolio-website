@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,6 @@
   scroll-behavior: smooth;
   font-family: 'Roboto';
   scroll-behavior: smooth;
-  
-  
 }
 
 header{
@@ -52,6 +52,10 @@ header{
     color: black;
 }
 
+.navbar a:hover{
+    color: rgb(138, 74, 10);
+    border-bottom: 2px solid rgb(138, 74, 10);
+}
 section{
   min-height: 100vh;
   
@@ -94,17 +98,23 @@ section{
 }
 
 .home-content img{
-    width: 60vh;
+    width: 30vw;
     border-radius: 50%;
+    transition: .3s ease-in-out;
     
+}
+.home-content img:hover{
+    box-shadow: 0 0 25px rgb(138, 74, 10);
 }
 .social-icons{
     margin-top: 2.5rem;
-    
+    height: 3.5rem;
+    display: flex;
+    justify-content: right;
     
 }
 .social-icons a{
-   
+  
     font-size: 2rem;
     border: 3px solid black;
     color:  rgb(138, 74, 10);
@@ -115,12 +125,20 @@ section{
     margin-left: 1rem;
     border-color: rgb(138, 74, 10);
     box-shadow: 1px 1px 0px black;
-   
-    
+    transition: .3s ease-in-out;
     }
 
-.buttons button{
+.social-icons a:hover{
+    transform: scale(1.1) translateY(-5px);
+    color: rgb(138, 74, 10);
+    box-shadow: 0 0 5px black;
+}
+.buttons{
     margin-top: 5rem;
+    display: flex;
+    justify-content: right;
+}
+.buttons a{
     padding: .8rem 2.5rem;
     margin-left: 1rem;
     font-size: 1.2rem;
@@ -129,9 +147,19 @@ section{
     background:  rgb(138, 74, 10);
     border: 3px solid rgb(138, 74, 10);
     color:  white;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.buttons a:hover{
+    transform: scale(1.1) translateY(-5px);
+    color: white;
+    box-shadow: 0 0 5px black;
 }
 .highlights{
     padding:8rem 25%;
+    
+    justify-content: center;
+    display: flex;
 }
 .highlights-content ul{
     display: flex;
@@ -139,6 +167,8 @@ section{
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
+
+ padding: 0;
 }
 
 .highlights-content li{
@@ -152,6 +182,13 @@ section{
     font-size: 1.3rem;
     box-shadow: 2px 2px 2px black;
     border-radius: 2rem;
+    display: flex;
+    justify-content: left;
+    transition: .3s ease-in-out;
+}
+
+.highlights-content li:hover{
+    transform: scale(1.1) translateY(-5px);
 }
 
 .highlights-content img{
@@ -172,7 +209,7 @@ section{
 }
 
 .projects{
-    padding: 8rem 25%;
+    padding: 8rem 10%;
 }
 
 .projects-content h1{
@@ -188,20 +225,25 @@ section{
     align-items: center;
     gap: 3rem;
     flex-wrap: wrap;
-    
+    padding: 0;
 }
 
 .projects-content li{
     background: linear-gradient(240deg, rgb(138, 74, 10), rgb(182, 121, 6));
     width: 29rem;
-    height: 35rem;
+    height: 40rem;
     border-radius: 2rem;
     list-style-type: none;
     text-align: center;
     padding: 0 2rem;
     font-size: 1rem;
-    color: white
+    color: white   
     
+}
+
+.projects-content li:hover{
+    transition: .3s ease-in-out;
+    transform: scale(1.05) translateY(-5px);
 }
 
 .projects-content p{
@@ -227,6 +269,7 @@ section{
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   border-radius: 2rem;
+  
 }
 
 .education{
@@ -256,8 +299,10 @@ section{
 .education-content img{
     width: 50vh;
     border-radius: 50%;
-    
-    
+    transition: .3s ease-in-out;
+}
+.education-content img:hover{
+    box-shadow: 0 0 25px black;
 }
 
 .grad-info{
@@ -269,7 +314,11 @@ section{
     justify-content: left;
     align-items: center;
     margin-bottom: 2rem;
-   
+    transition: .3s ease-in-out;
+}
+
+.education-content li:hover{
+    transform: scale(1.05) translateY(-5px);
 }
 
 .education-content i{
@@ -283,7 +332,7 @@ section{
 
 .achievements{
     
-    padding: 8rem 25%;
+    padding: 8rem 10%;
 }
 
 .achievements h1{
@@ -297,8 +346,15 @@ section{
 .achievements-content{
     display: flex;
     justify-content: center;
+    padding: 0;
+}
+.achievements-content ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 .achievements-content li{
+    
     border: 4px solid rgb(138, 74, 10);
     width: 25rem;
     height: 30rem;
@@ -310,6 +366,14 @@ section{
     box-shadow: 2px 2px 2px black;
     border-radius: 2rem;
     margin: 0 2rem 2rem 2rem;
+    transition: .3s ease-in-out;
+}
+
+.achievements-content li:hover{
+    transform: scale(1.05) translateY(-5x);
+    background-color:rgb(138, 74, 10) ;
+    color: white;
+    box-shadow: none;
 }
 
 .achievements-image img{
@@ -339,9 +403,88 @@ section{
     justify-content: center;
 }
 
+.contact-me{
+    padding: 7rem 25%;
+}
+
+.contact-me h1{
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.contact-me-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact-me-conten label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me input{
+    border: 3px solid rgb(138, 74, 10);
+    margin-bottom: 2.5rem;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding-left: 2rem;
+}
+
+.contact-me textarea{
+    border: 3px solid rgb(138, 74, 10);
+    margin-bottom: 2.5rem;
+    width: 30rem;
+    border-radius: 10px;
+    padding: .7rem 2rem;
+}
+.contact-me button{
+    height: 3rem;
+    width: 10rem;
+    padding: .5rem;
+    font-weight: 700;
+    border-radius: 10rem;
+    color: white;
+    background-color: rgb(138, 74, 10);
+    border: none;
+    transition: .3s ease-in-out;
+}
+.contact-me button:hover{
+    transform: scale(1.05)translateY(-5px);
+}
+.social-icon{
+    padding: 3rem 0;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icon a{
+    display: flex;
+    font-size: 2rem;
+    border: 3px solid black;
+    color:  rgb(138, 74, 10);
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    text-decoration: none;
+    border-color: rgb(138, 74, 10);
+    box-shadow: 1px 1px 0px black;
+    transition: .3s ease-in-out;
+}
+.social-icon a:hover{
+    transform: scale(1.05)translateY(-5px);
+    color:rgb(138, 74, 10) ;
+}
 
 
-@media (max-width: 767px){
+@media (max-width: 1100px){
     * {
   margin: 0;
   padding: 0;
@@ -468,7 +611,10 @@ header{
     box-shadow: 1px 1px 0px black;
 
     }
-
+.buttons{
+    display: flex;
+    justify-content: center;
+}
 .buttons button{
     margin-top: 3rem;
     padding: .8rem 2.5rem;
@@ -538,6 +684,7 @@ header{
     margin-bottom: 3rem;
     font-weight: 700;
     font-size: 4rem;
+    text-align: center;
 }
 .projects-content ul{
     display: flex;
@@ -605,6 +752,7 @@ header{
     justify-content: center;
     gap: 2rem;
     flex-direction: column;
+    align-items: center;
     
 }
 
@@ -718,6 +866,501 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+
+.contact-me{
+    padding: 7rem 25%;
+}
+.contact-me h1{
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.contact-me-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contact-me input{
+    border: 3px solid rgb(138, 74, 10);
+    margin-bottom: 2.5rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding-left: 2rem;
+}
+
+.contact-me textarea{
+    border: 3px solid rgb(138, 74, 10);
+    margin-bottom: 2.5rem;
+    width: 20rem;
+    border-radius: 10px;
+    padding: .7rem 2rem;
+}
+.contact-me button{
+    height: 3rem;
+    width: 10rem;
+    padding: .5rem;
+    font-weight: 700;
+    border-radius: 10rem;
+    color: white;
+    background-color: rgb(138, 74, 10);
+    border: none;
+}
+.social-icon{
+    padding: 3rem 0;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icon a{
+    display: flex;
+    font-size: 2rem;
+    border: 3px solid black;
+    color:  rgb(138, 74, 10);
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    text-decoration: none;
+    border-color: rgb(138, 74, 10);
+    box-shadow: 1px 1px 0px black;
+}
+}
+
+
+
+@media(min-width: 1100px) and (max-width:1510px) {
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Roboto';
+  scroll-behavior: smooth;
+  
+  
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0.5px 7px  rgba(0, 0, 0, 0.351);
+    background-color: rgba(255, 255, 255, 0.581);
+    backdrop-filter: blur(10px);
+    border-color: white;
+     z-index: 9999;
+}
+.content{
+    justify-content: space-between;
+    display: flex;
+    padding:1rem 25%;
+    align-items: center;
+}
+.logo{
+    font-size: 1.7rem;
+    font-weight: 900;
+    background: linear-gradient(240deg, rgb(138, 74, 10), rgb(182, 121, 6));
+    background-clip: text;
+    color: transparent;
+}
+
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    display: block;
+    background-color: white;
+}
+
+.navbar{
+    display: none !important;
+}
+.navbar a{
+    padding: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+section{
+  min-height: 100vh;
+  
+}
+.home{
+    padding: 10rem 10% 0 10%;
+}
+.home-content{
+    display: flex; 
+    
+    gap: 10rem; 
+    align-items: center
+    
+}
+.intro{
+    text-align: right;
+    align-items: center;
+}
+
+.intro h1{
+    font-size:3.5rem;
+    font-weight: 700;
+   
+}
+.intro span{
+    background: linear-gradient(240deg, rgb(138, 74, 10), rgb(182, 121, 6));
+    background-clip: text;
+    color: transparent;
+    
+}
+.intro h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+
+}
+
+.intro p{
+    font-size:1.5rem ;
+    margin-bottom: 2rem;
+}
+
+.home-content img{
+    width: 30vw;
+    border-radius: 50%;
+    
+}
+.social-icons{
+    margin-top: 2.5rem;
+    
+    
+}
+.social-icons a{
+   
+    font-size: 2rem;
+    border: 3px solid black;
+    color:  rgb(138, 74, 10);
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    margin-left: 1rem;
+    border-color: rgb(138, 74, 10);
+    box-shadow: 1px 1px 0px black;
+   
+    
+    }
+
+.buttons button{
+    margin-top: 5rem;
+    padding: .8rem 2.5rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 50rem;
+    font-weight: 700;
+    background:  rgb(138, 74, 10);
+    border: 3px solid rgb(138, 74, 10);
+    color:  white;
+}
+.highlights{
+    padding:8rem 10%;
+    
+    justify-content: center;
+    display: flex;
+}
+.highlights-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+ padding: 0;
+}
+
+.highlights-content li{
+    border: 3px solid rgb(138, 74, 10);
+    width: 18rem;
+    height: 20rem;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.highlights-content img{
+  
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem;
+}
+
+.highlights h1{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom:  6rem;
+    font-weight: 700;
+    text-align: justify;
+
+}
+
+.projects{
+    padding: 8rem 10%;
+}
+
+.projects-content h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.projects-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 0;
+    
+}
+
+.projects-content li{
+    background: linear-gradient(240deg, rgb(138, 74, 10), rgb(182, 121, 6));
+    width: 29rem;
+    height: 40rem;
+    border-radius: 2rem;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1rem;
+    color: white
+    
+}
+
+.projects-content p{
+    text-align: justify;
+    text-shadow: 2px 2px 0 black;
+}
+
+.projects-content h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 0 black;
+}
+
+.projects-content span{
+    font-weight: 700;
+}
+
+.carousel-inner img{
+    width: 25rem;
+  height: 15rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+}
+
+.education{
+    
+    padding: 8rem 20%;
+    
+
+}
+.education h1{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom:  7rem;
+    font-weight: 700;
+}
+.education-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.education-content img{
+    width: 50vh;
+    border-radius: 50%;
+    
+    
+}
+
+.grad-info{
+    border-left:5px solid rgb(182, 121, 6) ;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.education-content li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 2rem;
+   
+}
+
+.education-content i{
+    margin-right: 3rem;
+    font-size: 3rem;
+}
+
+.education-content p{
+    font-size: 1.3rem;
+}
+
+.achievements{
+    
+    padding: 8rem 25%;
+}
+
+.achievements h1{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom:  7rem;
+    font-weight: 700;
+}
+
+.achievements-content{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.achievements-content ul{
+    padding: 0;
+}
+.achievements-content li{
+    border: 4px solid rgb(138, 74, 10);
+    width: 25rem;
+    height: 30rem;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 2rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.achievements-image img{
+    width: 25rem;
+  height: 15rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 4px solid rgb(138, 74, 10);
+}
+
+.achievements-content h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.achievements-content p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.achievements-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contact-me{
+    padding: 7rem 25%;
+}
+.contact-me h1{
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.contact-me-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contact-me input{
+    border: 3px solid rgb(138, 74, 10);
+    margin-bottom: 2.5rem;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding-left: 2rem;
+}
+
+.contact-me textarea{
+    border: 3px solid rgb(138, 74, 10);
+    margin-bottom: 2.5rem;
+    width: 30rem;
+    border-radius: 10px;
+    padding: .7rem 2rem;
+}
+.contact-me button{
+    height: 3rem;
+    width: 10rem;
+    padding: .5rem;
+    font-weight: 700;
+    border-radius: 10rem;
+    color: white;
+    background-color: rgb(138, 74, 10);
+    border: none;
+}
+.social-icon{
+    padding: 3rem 0;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icon a{
+    display: flex;
+    font-size: 2rem;
+    border: 3px solid black;
+    color:  rgb(138, 74, 10);
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    text-decoration: none;
+    border-color: rgb(138, 74, 10);
+    box-shadow: 1px 1px 0px black;
 }
 
 }
