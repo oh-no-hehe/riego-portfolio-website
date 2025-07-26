@@ -141,7 +141,6 @@ section{
 }
 .buttons a{
     padding: .8rem 2.5rem;
-    
     font-size: 1.2rem;
     border-radius: 50rem;
     font-weight: 700;
@@ -623,7 +622,6 @@ header{
 .buttons button{
     margin-top: 3rem;
     padding: .8rem 2.5rem;
-    
     font-size: 1.2rem;
     border-radius: 50rem;
     font-weight: 700;
