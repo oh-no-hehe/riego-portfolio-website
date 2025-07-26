@@ -405,6 +405,9 @@ section{
 
 .contact-me{
     padding: 7rem 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-me h1{
@@ -614,11 +617,12 @@ header{
 .buttons{
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 .buttons button{
     margin-top: 3rem;
     padding: .8rem 2.5rem;
-    margin-left: 1rem;
+    
     font-size: 1.2rem;
     border-radius: 50rem;
     font-weight: 700;
@@ -870,12 +874,12 @@ header{
 
 
 .contact-me{
-    padding: 7rem 25%;
+    padding: 7rem 10%;
 }
 .contact-me h1{
     margin-bottom: 3rem;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-top: 1rem;
 }
